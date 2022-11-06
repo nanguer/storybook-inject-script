@@ -1,14 +1,19 @@
 {
   "name": "storybook-inject-script",
-  "version": "1.0.0",
-  "description": "",
-  "main": "dist/main.bundle.js",
-  "types": "./dist/storybook-inject-script.d.ts",
+  "version": "1.1.2",
+  "description": "Injects a script tag with a user-defined URL",
+  "main": "./lib/index.js",
+  "types": "./lib/types",
+  "module": "./lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack serve",
-    "build": "webpack --mode production --progress ",
+    "build": "yarn tscheck",
     "tscheck": "tsc"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "16.8.0",
+    "@storybook/react": "^6.0.0"
   },
   "author": "Nahuel Gimenez",
   "license": "ISC",
@@ -17,7 +22,18 @@
     "react-dom": "^18.2.0"
   },
   "files": [
-    "dist"
+    "lib",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "react",
+    "storybook",
+    "script",
+    "inject",
+    "web",
+    "components",
+    "decorator"
   ],
   "devDependencies": {
     "@babel/core": "^7.19.6",
@@ -33,9 +49,6 @@
     "core-js": "^3.26.0",
     "eslint": "^8.26.0",
     "regenerator-runtime": "^0.13.10",
-    "typescript": "^4.8.4",
-    "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.11.1"
+    "typescript": "^4.8.4"
   }
 }

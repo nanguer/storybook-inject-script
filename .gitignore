@@ -1,3 +1,5 @@
 node_modules/
 dist/
+lib/
+lib-esm/
 .DS_Store
