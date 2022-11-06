@@ -1,6 +1,6 @@
 {
   "name": "storybook-inject-script",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "Injects a script tag with a user-defined URL",
   "main": "./lib/index.js",
   "types": "./lib/types",
@@ -16,7 +16,7 @@
     "@storybook/react": "^6.0.0"
   },
   "author": "Nahuel Gimenez",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
