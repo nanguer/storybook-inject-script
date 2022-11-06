@@ -30,6 +30,15 @@ SomeComponentStory.decorators = [injectScript("https://some-url-to-your-script.j
   npm install storybook-inject-script
   ```
 
+## Options
+
+By default, script loads with the following attributes:
+
+- _defer_
+- _type_ _"application/javascript"_
+
+It will be customisable soon.
+
 <!-- LICENSE -->
 
 ## License
