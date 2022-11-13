@@ -14,7 +14,7 @@ The decorator takes the src URL as first mandatory argument, and an optional sec
 
 ```javascript
 // component.stories.tsx
-import { injectScript } from 'storybook-inject-script';
+import injectScript from 'storybook-inject-script';
 ...
 
 export const SomeComponentStory = () => <Component />
