@@ -10,6 +10,8 @@ The tag is deleted on unmount.
 
 ## Getting Started
 
+The decorator takes the src URL as first mandatory argument, and an optional second object for the rest of the HTMLScriptElement options:
+
 ```javascript
 // component.stories.tsx
 import { injectScript } from 'storybook-inject-script';
@@ -17,7 +19,7 @@ import { injectScript } from 'storybook-inject-script';
 
 export const SomeComponentStory = () => <Component />
 
-SomeComponentStory.decorators = [injectScript("https://some-url-to-your-script.js")];
+SomeComponentStory.decorators = [injectScript("https://some-url-to-your-script.js", {containerId: "some-element", htmlFor: "foo")];
 ```
 
 ### Prerequisites
@@ -36,8 +38,6 @@ By default, script loads with the following attributes:
 
 - _defer_
 - _type_ _"application/javascript"_
-
-It will be customisable soon.
 
 <!-- LICENSE -->
 
