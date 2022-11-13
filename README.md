@@ -34,6 +34,8 @@ SomeComponentStory.decorators = [injectScript("https://some-url-to-your-script.j
 
 ## Options
 
+See https://developer.mozilla.org/en-US/docs/Web/API/HTMLScriptElement.
+
 By default, script loads with the following attributes:
 
 - _defer_

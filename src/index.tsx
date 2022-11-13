@@ -11,8 +11,8 @@ type Options = Partial<Omit<HTMLScriptElement, "src">> & {
  * @param options atributes to set to the script tag. only "src" is mandatory (path to script)
  * @returns decorated story with appended script
  */
-export const injectScript =
-  (src: string, options?: Options) => (DecoratedStory: ComponentType) => {
+export default (src: string, options?: Options) =>
+  (DecoratedStory: ComponentType) => {
     useLayoutEffect(() => {
       const scriptEl = document.createElement("script");
       scriptEl.setAttribute(src, src);
